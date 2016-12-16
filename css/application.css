@@ -208,9 +208,10 @@ h1 {
 
 .logo {
   position: absolute;
-  top: 60px;
+  top: 40px;
   left: 80px;
   font-family: 'Source Serif Pro', serif;
+  font-size: 1.4em;
   display: flex;
   justify-content: flex-start;
 }
@@ -230,12 +231,17 @@ h1 {
 
 }
 .title h5 {
+  margin-top: 10px;
+  margin-bottom: 50px;
+
   letter-spacing: 0.3em;
-  font-size: 22px;
+  font-size: 17px;
   font-weight: lighter;
 }
 .title h1 {
+
   font-size: 80px;
+
 }
 .explore {
   display: none;
@@ -312,19 +318,17 @@ h3 {
   left: 25px;
 }
 .panel img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /*position: absolute;
+
+  position: absolute;
   top: 150px;
   left: 125px;
   background-color: black;
-  opacity: 0.5;
-  border-radius: 50%;*/
+  opacity: 0.4;
+  border-radius: 50%;
 }
 .panel .bigger {
   position: absolute;
   top: 150px;
-  left: 275px;
+  left: 350px;
 }
 }
