@@ -22,6 +22,7 @@ h1 {
   padding: 0;
   margin-top: -50px;
 
+
 }
 
 /*LARGE SCREEN*/
@@ -62,7 +63,15 @@ h1 {
 
 
 
-
+  .white-border {
+    position: absolute;
+    top: 450px;
+    left: 550px;
+    background: white;
+    height: 5px;
+    width: 250px;
+    margin-bottom: 15px;
+  }
 
   .title {
     width: 100%;
@@ -233,15 +242,21 @@ h1 {
 .title h5 {
   margin-top: 10px;
   margin-bottom: 50px;
-
   letter-spacing: 0.3em;
   font-size: 17px;
   font-weight: lighter;
 }
 .title h1 {
-
   font-size: 80px;
-
+}
+.white-border {
+  position: absolute;
+  top: 350px;
+  left: 275px;
+  background: white;
+  height: 5px;
+  width: 250px;
+  margin-bottom: 15px;
 }
 .explore {
   display: none;
