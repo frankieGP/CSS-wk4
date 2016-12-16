@@ -69,52 +69,71 @@ a {
 .info a {
   margin-top: 34px;
 }
+
+
+/*IMAGE GALLERY*/
 .gallery {
   height: 800px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex: auto;
-
 }
+
 .panel {
   height: 400px;
   flex: auto;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
 }
 .raft{
   background-image: url("../img/raft.jpg");
-  background-size: cover;
-  background-position: center;
   flex-basis: 50%;
-
 }
-.base{
+.base {
   background-image: url("../img/base.jpg");
-  background-size: cover;
-  background-position: center;
   flex-basis: 25%;
 }
-.backpacking{
+.backpacking {
   background-image: url("../img/backpacking.jpg");
-  background-size: cover;
-  background-position: center;
   flex-basis: 25%;
 }
-.canoe{
+.canoe {
   background-image: url("../img/canoe.jpg");
-  background-size: cover;
-  background-position: center;
   flex-basis: 25%;
 }
-.photo{
+.photo {
   background-image: url("../img/photo.jpg");
-  background-size: cover;
-  background-position: center;
   flex-basis: 25%;
 }
-.custom{
+.custom {
   background-image: url("../img/custom.jpg");
-  background-size: cover;
-  background-position: center;
   flex-basis: 50%;
+}
+
+.orange-border {
+  position: absolute;
+  top: 300px;
+  left: 25px;
+  background: #dc7725;
+  height: 5px;
+  width: 40px;
+  margin-bottom: 15px;
+}
+h3 {
+  position: absolute;
+  top: 300px;
+  left: 25px;
+}
+.panel img {
+  position: absolute;
+  top: 150px;
+  left: 125px;
+}
+.panel .bigger {
+  position: absolute;
+  top: 150px;
+  left: 275px;
 }
