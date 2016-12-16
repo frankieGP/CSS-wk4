@@ -21,6 +21,7 @@ h1 {
   margin: 0;
   padding: 0;
   margin-top: -50px;
+  border-bottom: 4px solid white;
 
 
 }
@@ -63,15 +64,7 @@ h1 {
 
 
 
-  .white-border {
-    position: absolute;
-    top: 450px;
-    left: 550px;
-    background: white;
-    height: 5px;
-    width: 250px;
-    margin-bottom: 15px;
-  }
+
 
   .title {
     width: 100%;
@@ -132,6 +125,8 @@ h1 {
   }
 
   .panel {
+    -webkit-transition: background-color 2s;
+    transition: background color 2s;
     height: 400px;
     flex: auto;
     background-size: cover;
@@ -180,12 +175,18 @@ h1 {
     left: 25px;
   }
   .panel img {
+    -webkit-transition: background-color 2s;
+    transition: background color 2s;
     position: absolute;
     top: 150px;
     left: 125px;
     background-color: black;
     opacity: 0.5;
     border-radius: 50%;
+  }
+  .panel img:hover{
+    background-color: green;
+
   }
   .panel .bigger {
     position: absolute;
@@ -248,16 +249,9 @@ h1 {
 }
 .title h1 {
   font-size: 80px;
+  position: relative;
 }
-.white-border {
-  position: absolute;
-  top: 350px;
-  left: 275px;
-  background: white;
-  height: 5px;
-  width: 250px;
-  margin-bottom: 15px;
-}
+
 .explore {
   display: none;
 }
@@ -292,6 +286,9 @@ h1 {
   position: relative;
 
 }
+
+
+
 .raft{
   background-image: url("../img/raft.jpg");
   flex-basis: 100%;
@@ -333,13 +330,18 @@ h3 {
   left: 25px;
 }
 .panel img {
-
+  -webkit-transition: background-color 2s;
+  transition: background color 2s;
   position: absolute;
   top: 150px;
   left: 125px;
   background-color: black;
   opacity: 0.4;
   border-radius: 50%;
+}
+.panel img:hover{
+  background-color: green;
+
 }
 .panel .bigger {
   position: absolute;
