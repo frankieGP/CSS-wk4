@@ -15,33 +15,202 @@ a {
   text-decoration: none;
 
 }
+h1 {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 8.5em;
+  margin: 0;
+  padding: 0;
+  margin-top: -50px;
 
+}
 
-
+/*LARGE SCREEN*/
+@media only screen and (min-width: 950px){
 /*//TOP HERO SPLASH//*/
+
+  .hero {
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 635px;
+    position: relative;
+  }
+
+  .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 150px;
+  }
+
+  .navbar a {
+      padding: 10px 25px;
+      font-size: 15px;
+      letter-spacing: 0.2em;
+  }
+
+  .logo {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    font-family: 'Source Serif Pro', serif;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+
+
+
+  .title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .title h5 {
+    letter-spacing: 0.3em;
+    font-size: 1.3em;
+    font-weight: lighter;
+  }
+
+  .explore {
+    display: inline-block;
+    line-height: 60px;
+    padding: 0px 30px;
+    background: #DC7725;
+    font-size: 14px;
+    letter-spacing: 2px;
+  }
+  .play {
+      width: 30px;
+      padding: 30px 0px 30px 10px;
+  }
+  /*INFO BAR*/
+
+  .info-wrap {
+    background-image: url("../img/info.jpg");
+    background-size: auto;
+    background-position: center;
+    width: 100%;
+    height: 80px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+
+
+  }
+  .info {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .info a {
+    margin-top: 34px;
+  }
+
+
+  /*IMAGE GALLERY*/
+  .gallery {
+    height: 800px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+  }
+
+  .panel {
+    height: 400px;
+    flex: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+  }
+  .raft{
+    background-image: url("../img/raft.jpg");
+    flex-basis: 50%;
+  }
+  .base {
+    background-image: url("../img/base.jpg");
+    flex-basis: 25%;
+  }
+  .backpacking {
+    background-image: url("../img/backpacking.jpg");
+    flex-basis: 25%;
+  }
+  .canoe {
+    background-image: url("../img/canoe.jpg");
+    flex-basis: 25%;
+  }
+  .photo {
+    background-image: url("../img/photo.jpg");
+    flex-basis: 25%;
+  }
+  .custom {
+    background-image: url("../img/custom.jpg");
+    flex-basis: 50%;
+  }
+
+  .orange-border {
+    position: absolute;
+    top: 300px;
+    left: 25px;
+    background: #dc7725;
+    height: 5px;
+    width: 40px;
+    margin-bottom: 15px;
+  }
+  h3 {
+    font-size: 22px;
+    position: absolute;
+    top: 300px;
+    left: 25px;
+  }
+  .panel img {
+    position: absolute;
+    top: 150px;
+    left: 125px;
+    background-color: black;
+    opacity: 0.5;
+    border-radius: 50%;
+  }
+  .panel .bigger {
+    position: absolute;
+    top: 150px;
+    left: 275px;
+  }
+}
+
+
+/*MOBILE SCREEN*/
+@media only screen and (max-width: 949px){
+/*//TOP HERO SPLASH//*/
+
 .hero {
   background-image: url("../img/hero.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 635px;
+  height: 500px;
+  position: relative;
+
 }
 
 .navbar {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  height: 150px;
+  display: none;
 }
 
-.navbar a {
-    padding: 10px 25px;
-    font-size: 15px;
-    letter-spacing: 0.2em;
-}
+
 
 .logo {
+  position: absolute;
+  top: 60px;
+  left: 80px;
+  font-family: 'Source Serif Pro', serif;
   display: flex;
   justify-content: flex-start;
 }
@@ -50,49 +219,44 @@ a {
 
 
 
-
 .title {
-  margin-top: 90px;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
+  padding-top: 125px;
+
 }
 .title h5 {
   letter-spacing: 0.3em;
-  font-size: 1.3em;
+  font-size: 22px;
   font-weight: lighter;
+}
+.title h1 {
+  font-size: 80px;
+}
+.explore {
+  display: none;
+}
+.play {
+    width: 30px;
+    padding: 30px 0px 30px 10px;
 }
 
 
 /*INFO BAR*/
-
 .info-wrap {
-  background-image: url("../img/info.jpg");
-  background-size: auto;
-  background-position: center;
-  width: 100%;
-  height: 80px;
-  margin-top: 2px;
-  margin-bottom: 2px;
-
-
-}
-.info {
-  display: flex;
-  justify-content: space-around;
+  display: none;
 }
 
-.info a {
-  margin-top: 34px;
-}
+
 
 
 /*IMAGE GALLERY*/
 .gallery {
-  height: 800px;
+  height: 1600px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -100,7 +264,7 @@ a {
 }
 
 .panel {
-  height: 400px;
+  height: 420px;
   flex: auto;
   background-size: cover;
   background-position: center;
@@ -109,27 +273,27 @@ a {
 }
 .raft{
   background-image: url("../img/raft.jpg");
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 .base {
   background-image: url("../img/base.jpg");
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 .backpacking {
   background-image: url("../img/backpacking.jpg");
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 .canoe {
   background-image: url("../img/canoe.jpg");
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 .photo {
   background-image: url("../img/photo.jpg");
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 .custom {
   background-image: url("../img/custom.jpg");
-  flex-basis: 50%;
+  flex-basis: 100%;
 }
 
 .orange-border {
@@ -148,15 +312,19 @@ h3 {
   left: 25px;
 }
 .panel img {
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*position: absolute;
   top: 150px;
   left: 125px;
-  border: 1px solid grey;
-  padding: 5px;
-  border-radius: 50%;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 50%;*/
 }
 .panel .bigger {
   position: absolute;
   top: 150px;
   left: 275px;
+}
 }
