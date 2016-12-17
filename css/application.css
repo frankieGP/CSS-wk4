@@ -204,7 +204,7 @@ h1 {
 
 
 /*MOBILE SCREEN*/
-@media only screen and (max-width: 949px){
+@media only screen and (min-width: 770px) and (max-width: 949px){
 /*//TOP HERO SPLASH//*/
 
   .hero {
@@ -355,5 +355,164 @@ h1 {
     top: 150px;
     left: 350px;
   }
-  
+
+}
+
+@media only screen and (max-width: 769px){
+/*//TOP HERO SPLASH//*/
+
+  .hero {
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 125px;
+  }
+
+  .title h5 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    letter-spacing: 0.3em;
+    font-size: 17px;
+    font-weight: lighter;
+  }
+
+  .title h1 {
+    font-size: 80px;
+    position: relative;
+  }
+
+  .explore {
+    display: none;
+  }
+
+  .play {
+      -webkit-transition:  2s;
+      transition:  2s
+      width: 30px;
+      padding: 30px 0px 30px 10px;
+  }
+
+  .play:hover {
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+
+  /*INFO BAR*/
+
+  .info-wrap {
+    display: none;
+  }
+
+  /*IMAGE GALLERY*/
+
+  .gallery {
+    background-color: #D1D1C9;
+    height: 2045px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+  }
+
+  .panel {
+    margin-left: 35px;
+    margin-right: 35px;
+    margin-bottom: 35px;
+    height: 290px;
+    flex: auto;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+
+  .raft {
+    background-image: url("../img/raft.jpg");
+    flex-basis: 100%;
+    margin-top: 35px;
+  }
+  .base {
+    background-image: url("../img/base.jpg");
+    flex-basis: 100%;
+  }
+  .backpacking {
+    background-image: url("../img/backpacking.jpg");
+    flex-basis: 100%;
+  }
+  .canoe {
+    background-image: url("../img/canoe.jpg");
+    flex-basis: 100%;
+  }
+  .photo {
+    background-image: url("../img/photo.jpg");
+    flex-basis: 100%;
+  }
+  .custom {
+    background-image: url("../img/custom.jpg");
+    flex-basis: 100%;
+  }
+
+  .orange-border {
+    position: absolute;
+    top: 200px;
+    left: 25px;
+    background: #dc7725;
+    height: 5px;
+    width: 40px;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 22px;
+    position: absolute;
+    top: 200px;
+    left: 25px;
+  }
+
+  .panel img {
+    -webkit-transition: background-color 2s;
+    transition: background color 2s;
+    position: absolute;
+    top: 75px;
+    left: 250px;
+    background-color: black;
+    opacity: 0.4;
+    border-radius: 50%;
+  }
+
+  .panel img:hover{
+    background-color: green;
+  }
+
+  .panel .bigger {
+    position: absolute;
+    top: 75px;
+    left: 250px;
+  }
+
 }
