@@ -199,7 +199,9 @@ h1 {
     top: 150px;
     left: 275px;
   }
-
+  .hamburger{
+    display: none;
+  }
 }
 
 
@@ -354,6 +356,21 @@ h1 {
     position: absolute;
     top: 150px;
     left: 350px;
+  }
+  .hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color:#fff;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
   }
 
 }
@@ -514,5 +531,21 @@ h1 {
     top: 75px;
     left: 250px;
   }
+    .hamburger{
+    background:none;
+    position:absolute;
+    top:0;
+    right:0;
+    line-height:45px;
+    padding:5px 15px 0px 15px;
+    color:#fff;
+    border:0;
+    font-size:1.4em;
+    font-weight:bold;
+    cursor:pointer;
+    outline:none;
+    z-index:10000000000000;
+  }
+
 
 }
