@@ -10,11 +10,16 @@ body {
   color: white;
   font-family: 'Fjalla One', sans-serif;
 }
+
 a {
   color: white;
   text-decoration: none;
-
 }
+
+a:hover {
+  color: orange;
+}
+
 h1 {
   font-family: 'Source Serif Pro', serif;
   font-size: 8.5em;
@@ -22,8 +27,6 @@ h1 {
   padding: 0;
   margin-top: -50px;
   border-bottom: 4px solid white;
-
-
 }
 
 /*LARGE SCREEN*/
@@ -118,6 +121,7 @@ h1 {
 
   .info a {
     margin-top: 34px;
+    padding: 0;
   }
 
   /*IMAGE GALLERY*/
@@ -183,6 +187,8 @@ h1 {
   .panel img {
     -webkit-transition: background-color 2s;
     transition: background color 2s;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
     position: absolute;
     top: 150px;
     left: 125px;
@@ -193,6 +199,7 @@ h1 {
 
   .panel img:hover{
     background-color: green;
+    transform: scale(2);
   }
 
   .panel .bigger {
